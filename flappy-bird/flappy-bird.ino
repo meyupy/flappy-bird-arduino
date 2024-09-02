@@ -172,7 +172,8 @@ void displayMatrix(byte state[8][8]) {
   for(byte r=0; r<8; r++){
     digitalWrite(PINS_ROW[r], HIGH);
     for(byte c=0; c<8; c++){
-      const byte pixelState = state[c][r];
+      // const byte pixelState = state[c][r];  // horizontal
+      const byte pixelState = state[7-r][c];  // vertical
       digitalWrite(PINS_COL[c], !pixelState);
       delay(1);
       if(pixelState) digitalWrite(PINS_COL[c], HIGH);
