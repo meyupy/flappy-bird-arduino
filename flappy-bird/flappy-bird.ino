@@ -114,7 +114,7 @@ class Game{
 
     }
 
-    const byte FTW = 20;  // frames to wait
+    const byte FTW = 15;  // frames to wait
     long int totalFrames = 0;
     bool running = false;
 
