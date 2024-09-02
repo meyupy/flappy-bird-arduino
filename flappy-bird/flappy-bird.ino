@@ -114,7 +114,7 @@ class Game{
 
     }
 
-    const byte FTW = 5;  // frames to wait
+    const byte FTW = 20;  // frames to wait
     long int totalFrames = 0;
     bool running = false;
 
@@ -175,7 +175,7 @@ void displayMatrix(byte state[8][8]) {
       // const byte pixelState = state[c][r];  // horizontal
       const byte pixelState = state[7-r][c];  // vertical
       digitalWrite(PINS_COL[c], !pixelState);
-      delay(1);
+      delayMicroseconds(250);
       if(pixelState) digitalWrite(PINS_COL[c], HIGH);
     }
     digitalWrite(PINS_ROW[r], LOW);
