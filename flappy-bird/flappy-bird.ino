@@ -1,15 +1,3 @@
-/*
-
-           1088BS
-  16 15 14 13 12 11 10 09
-  01 02 03 04 05 06 07 08
-
-  01-08: 2-9
-  09-12: 13-10
-  13-16: A0-A3
-
-*/
-
 const byte PINS_ROW[8] = { A0, 12, A2, 13, 5, A3, 7, 2 };
 const byte PINS_COL[8] = { 9, 8, 4, A1, 3, 10, 11, 6 };
 const byte PIN_BUTTON_1 = A4, PIN_BUTTON_2 = A5;
